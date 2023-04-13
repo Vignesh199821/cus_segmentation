@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+        <div class="logo">
+            <h2>N.B.K.R.I.S.T</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#upload.html">Upload Files</a></li>
+                <li><a href="results.html" >3d plot</a></li>
+                <li class="sign-out"><a href="index.html">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="upload-container">
+          <h2>Upload Your File</h2>
+          <div class="upload-box">
+            <label for="file-upload" class="custom-file-upload">
+              <i class="fa fa-cloud-upload"></i> Select File
+            </label>
+            <p id="up-file-name"></p>
+            <input id="file-upload" type="file" name="fileInput" accept=".csv" onchange="fileSelected(this);">
+            <button id="upload-button" onclick="getData()">Upload</button>
+            <button id="upload-button" onclick="get3dplot()">get 3d plots</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="results-container">
+          <h2>Results</h2>
+          <div id="img_cont" class="image-container">
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer_segmentation"
+version = "0.0.1"
+authors = [
+    { name="Vignesh", email="vignesh199821@gmail.com" },
+]
+description = "Customer Segmentation is the subdivision of a market into discrete customer groups that share similar characteristics. Customer Segmentation can be a powerful means to identify unsatisfied customer needs. Using the above data companies can then outperform the competition by developing uniquely appealing products and services."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/Vignesh199821/customer_segmentation"
+"Bug Tracker" = "https://gitlab.com/Vignesh199821/customer_segmentation/issues"
